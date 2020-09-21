@@ -5,7 +5,7 @@ import "codemirror/theme/material.css";
 import "codemirror/mode/xml/xml";
 import "codemirror/mode/css/css";
 import "codemirror/mode/javascript/javascript";
-import { FaCompressAlt, FaCompressArrowsAlt, FaTrash } from "react-icons/fa";
+import { FaExpandAlt, FaCompressArrowsAlt, FaTrash } from "react-icons/fa";
 import { PRIFIX } from "./hooks/useLocalStoreage";
 
 interface CodeEditor {
@@ -44,7 +44,7 @@ const CodeEditor: FC<CodeEditor> = ({ title, lang, theme, onCodeChange, codeText
               onClick={() => {
                 setOpen(!open);
               }}>
-              {open ? <FaCompressAlt /> : <FaCompressArrowsAlt />}
+              {open ? <FaExpandAlt /> : <FaCompressArrowsAlt />}
             </button>
           </div>
         </div>

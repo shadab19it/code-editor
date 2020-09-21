@@ -36,12 +36,12 @@ const App: FC = () => {
   };
   return (
     <div className='editor__wrapper'>
-      <div className='editor__container' style={{ height: "55%" }}>
+      <div className='editor__container'>
         <CodeEditor title='Html' lang='xml' codeText={htmlCode} onCodeChange={onHtmlChange} />
         <CodeEditor title='Css' lang='css' codeText={cssCode} onCodeChange={onCssChange} />
         <CodeEditor title='JavaScript' lang='javascript' codeText={jsCode} onCodeChange={onJsChange} />
       </div>
-      <div className='view__output' style={{ height: "45%" }}>
+      <div className='view__output'>
         <iframe
           title='TextEditor'
           width='100%'
