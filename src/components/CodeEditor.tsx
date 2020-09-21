@@ -44,7 +44,7 @@ const CodeEditor: FC<CodeEditor> = ({ title, lang, theme, onCodeChange, codeText
               onClick={() => {
                 setOpen(!open);
               }}>
-              {open ? <FaExpandAlt /> : <FaCompressArrowsAlt />}
+              {open ? <FaCompressArrowsAlt /> : <FaExpandAlt />}
             </button>
           </div>
         </div>
